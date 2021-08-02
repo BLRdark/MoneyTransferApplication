@@ -14,5 +14,13 @@
     <title>Dashboard</title>
 </head>
 <body>
+<c:import url="navbar.jsp"/>
+
+<main>
+    <div class="container">
+
+    </div>
+</main>
+<c:import url="footer.jsp"></c:import>
 </body>
 </html>

@@ -1,10 +1,15 @@
 package com.web.application.model.entities.users;
 
+import com.web.application.model.entities.card.Card;
+
+import java.util.List;
+
 public class User {
     private int id;
     private String username;
     private String password;
     private String role;
+    private List<Card> cardList;
 
     public int getId() {
         return id;
