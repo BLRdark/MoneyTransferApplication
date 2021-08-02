@@ -5,6 +5,7 @@
   Time: 01:25
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <header class="p-3 bg-dark text-white shadow-lg">
@@ -25,10 +26,11 @@
             </ul>
 
             <div class="text-end">
-                <a role="button" class="btn btn-outline-light me-2" href="/login" >Login</a>
+                <a role="button" class="btn btn-outline-light me-2" onclick="showForm('loginform')" >Login</a>
                 <a role="button" class="btn btn-outline-success" href="/register">Sign-up</a>
             </div>
         </div>
     </div>
 </header>
+<c:import url="login.jsp"></c:import>
 </html>

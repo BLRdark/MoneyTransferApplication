@@ -10,9 +10,9 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <html>
 <head>
-    <title>Title</title>
+    <c:import url="links.jsp"></c:import>
+    <title>Dashboard</title>
 </head>
 <body>
-
 </body>
 </html>

@@ -15,7 +15,7 @@
 <footer class="footer mt-auto py-3 bg-dark">
     <div class="container">
         <p class="float-end text-light"><a href="#">Back to top</a></p>
-        <p class="text-light">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p class="text-light">©2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </div>
 </footer>
 </body>

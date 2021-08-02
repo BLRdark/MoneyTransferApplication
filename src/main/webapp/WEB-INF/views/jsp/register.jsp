@@ -16,9 +16,8 @@
 <body class="d-flex flex-column h-100">
 <c:import url="navbar.jsp"></c:import>
 <main>
+
 </main>
-
-
 <c:import url="footer.jsp"></c:import>
 </body>
 </html>

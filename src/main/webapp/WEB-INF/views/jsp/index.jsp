@@ -14,10 +14,11 @@
 <c:import url="links.jsp"/>
     <title>Customer Relationship Management</title>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100" style="z-index: 99">
 <%-----------------------------------------------NavBar---------------------EDIT ICON--------------------------------%>
 <c:import url="navbar.jsp"></c:import>
 <%-----------------------------------------------FirstContent--------------------------------------------------------%>
+
 <main>
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 450px;">

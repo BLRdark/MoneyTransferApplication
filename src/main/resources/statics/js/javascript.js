@@ -7,8 +7,8 @@ function showPassword() {
     }
 }
 
-function showForm() {
-    var hidden = (document.getElementById('loginform')).hidden
+function showForm(id) {
+    var hidden = (document.getElementById(id)).hidden
     if(hidden){
         document.getElementById('loginform').hidden = false
     } else {
