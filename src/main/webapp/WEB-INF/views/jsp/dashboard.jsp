@@ -14,7 +14,7 @@
     <title>Dashboard</title>
 </head>
 <body>
-<c:import url="navbar.jsp"/>
+<c:import url="authorisedNavbar.jsp"/>
 
 <main>
     <div class="container">

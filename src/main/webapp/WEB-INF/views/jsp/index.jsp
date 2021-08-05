@@ -16,7 +16,8 @@
 </head>
 <body class="d-flex flex-column h-100" style="z-index: 99">
 <%-----------------------------------------------NavBar---------------------EDIT ICON--------------------------------%>
-<c:import url="navbar.jsp"></c:import>
+<c:import url="unauthorisedNavbar.jsp"></c:import>
+
 <%-----------------------------------------------FirstContent--------------------------------------------------------%>
 
 <main>
@@ -88,6 +89,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+
 <c:import url="footer.jsp"/>
 </body>
 </html>

@@ -26,8 +26,8 @@
             </ul>
 
             <div class="text-end">
-                <a role="button" class="btn btn-outline-light me-2" onclick="showForm('loginform')" >Login</a>
-                <a role="button" class="btn btn-outline-success" href="/register">Sign-up</a>
+                <a role="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"j >Login</a>
+                <a role="button" class="btn btn-outline-success" href="/register" >Sign-up</a>
             </div>
         </div>
     </div>

@@ -1,24 +1,18 @@
 package com.web.application.model.entities.card;
 
-public class Card {
+public class DashboardElement {
 
     private int id;
-    private String currency;
+    private String elementType;
     private String number;
     private Double balance;
 
-    public Card(){
-        this.number ="TMS0 CARD ";
-        this.balance = 0.0;
+    public String getElementType() {
+        return elementType;
     }
 
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
+    public void setElementType(String elementType) {
+        this.elementType = elementType;
     }
 
     public int getId() {

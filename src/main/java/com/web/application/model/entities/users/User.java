@@ -1,6 +1,6 @@
 package com.web.application.model.entities.users;
 
-import com.web.application.model.entities.card.Card;
+import com.web.application.model.entities.card.DashboardElement;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ public class User {
     private String username;
     private String password;
     private String role;
-    private List<Card> cardList;
+    private List<DashboardElement> cardList;
 
     public int getId() {
         return id;
