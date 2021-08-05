@@ -10,11 +10,11 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <html>
 <head>
-    <c:import url="links.jsp"></c:import>
+    <c:import url="links.jsp"/>
     <title>Title</title>
 </head>
 <body class="d-flex flex-column h-100">
-<c:import url="unauthorisedNavbar.jsp"></c:import>
+<c:import url="unauthorisedNavbar.jsp"/>
 <main>
     <div class="container" style="padding-top: 50px">
         <div class="row g-5">
@@ -134,12 +134,6 @@
         </div>
     </div>
 </main>
-<c:import url="footer.jsp"></c:import>
-<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script src="/docs/5.1/assets/js/docs.min.js"></script>
-<script async="" src="/docs/5.1/assets/js/validate-forms.js"></script>
+<c:import url="footer.jsp"/>
 </body>
 </html>
