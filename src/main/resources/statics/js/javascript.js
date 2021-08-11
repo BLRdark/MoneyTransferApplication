@@ -6,12 +6,3 @@ function showPassword(id) {
         document.getElementById('password').type = 'password'
     }
 }
-
-function showForm(id) {
-    var hidden = (document.getElementById(id)).hidden
-    if(hidden){
-        document.getElementById('loginform').hidden = false
-    } else {
-        document.getElementById('loginform').hidden = true
-    }
-}

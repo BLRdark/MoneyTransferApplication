@@ -25,7 +25,7 @@ public class SpringMVCConfig implements WebMvcConfigurer {
 
     /**
      * Static Resource (CSS or JS) mapping
-     */
+     **/
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
