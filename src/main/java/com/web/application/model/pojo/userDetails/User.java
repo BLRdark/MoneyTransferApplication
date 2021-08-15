@@ -1,10 +1,12 @@
-package com.web.application.model.pojo;
+package com.web.application.model.pojo.userDetails;
 
-import org.hibernate.annotations.Cascade;
+
+import com.web.application.model.pojo.Card;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
+
 @Entity
 @Table(name = "user")
 public class User {
@@ -13,10 +15,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-    @Column(name = "ROLE")
-    @JoinColumn(name = "ROLE", referencedColumnName = "ID")
-    private int role;
 
     @Column(name = "USERNAME")
     private String username;
@@ -42,19 +40,19 @@ public class User {
     @Column(name = "PATRONYMIC")
     private String patronymic;
 
-    @OneToMany(mappedBy="owner")
+    @OneToMany(mappedBy = "owner")
     private List<Card> cardList;
-
-    public int getRole() {
-        return role;
-    }
-
-    public void setRole(int role) {
-        this.role = role;
-    }
 
     public String getEmail() {
         return email;
+    }
+
+    public List<Card> getCardList() {
+        return cardList;
+    }
+
+    public void setCardList(List<Card> cardList) {
+        this.cardList = cardList;
     }
 
     public void setEmail(String email) {
@@ -123,24 +121,5 @@ public class User {
 
     public void setPatronymic(String patronymic) {
         this.patronymic = patronymic;
-    }
-
-    public List<Card> getCardList() {
-        return cardList;
-    }
-
-    public void setCardList(List<Card> cardList) {
-        this.cardList = cardList;
-    }
-
-    @Override
-    public String toString() {
-        String temp = "[ ";
-        for (Card card : cardList){
-            temp+=card.getNumber();
-            temp+=" ";
-        }
-        temp+="] ";
-        return username + " " + lastName + " " + patronymic + " " + password + " " + temp;
     }
 }

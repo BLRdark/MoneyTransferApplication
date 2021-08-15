@@ -22,9 +22,8 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="/" class="nav-link px-2 text-white">HOME</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Services</a></li>
             </ul>
 
             <div class="dropdown text-end">
@@ -34,7 +33,6 @@
                 <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
                     <li><a class="dropdown-item" href="#">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Notifications <span class="badge bg-success">1</span></a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
                 </ul>

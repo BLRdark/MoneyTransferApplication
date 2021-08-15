@@ -1,7 +1,7 @@
 package com.web.application.config.hibernate.DAO;
 
 import com.web.application.config.hibernate.hibernateConfig.HibernateUtil;
-import com.web.application.model.pojo.User;
+import com.web.application.model.pojo.userDetails.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.Session;
 

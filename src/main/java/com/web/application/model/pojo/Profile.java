@@ -1,5 +1,7 @@
 package com.web.application.model.pojo;
 
+import com.web.application.model.pojo.userDetails.User;
+
 public class Profile {
     private int id;
     private User user;

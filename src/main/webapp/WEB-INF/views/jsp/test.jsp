@@ -14,6 +14,7 @@
     <c:import url="links.jsp"/>
 </head>
 <body>
+<c:import url="authorisedNavbar.jsp"></c:import>
 <c:forEach var="user" items="${user}">
     <p>${user.username}</p>
 </c:forEach>

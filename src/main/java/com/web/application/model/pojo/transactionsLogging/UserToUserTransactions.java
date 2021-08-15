@@ -1,5 +1,8 @@
-package com.web.application.model.pojo;
+package com.web.application.model.pojo.transactionsLogging;
 
+
+import com.web.application.model.pojo.Currency;
+import com.web.application.model.pojo.userDetails.User;
 
 public class UserToUserTransactions {
     private int id;

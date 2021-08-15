@@ -1,8 +1,9 @@
 package com.web.application.model.pojo;
 
 
+import com.web.application.model.pojo.userDetails.User;
+
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "card")

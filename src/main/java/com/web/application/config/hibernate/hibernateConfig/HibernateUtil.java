@@ -2,8 +2,8 @@ package com.web.application.config.hibernate.hibernateConfig;
 
 import com.web.application.model.pojo.Card;
 import com.web.application.model.pojo.Currency;
-import com.web.application.model.pojo.Profile;
-import com.web.application.model.pojo.User;
+import com.web.application.model.pojo.userDetails.User;
+import com.web.application.model.pojo.userDetails.UserDetails;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
@@ -41,6 +41,7 @@ public class HibernateUtil {
                  * ADD CLASSES
                  */
                 sources.addAnnotatedClass(Card.class);
+                sources.addAnnotatedClass(UserDetails.class);
                 sources.addAnnotatedClass(Currency.class);
                 sources.addAnnotatedClass(User.class);
                 Metadata metadata = sources.getMetadataBuilder().build();
