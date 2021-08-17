@@ -16,7 +16,7 @@ public class TwoFactorService {
             }
 
         }
-        return code;
+        return code.toUpperCase();
     }
 
     private static char[] getAlphabet() {

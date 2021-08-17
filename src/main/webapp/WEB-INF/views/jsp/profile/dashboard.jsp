@@ -1,20 +1,21 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: dark
-  Date: 13.08.2021
-  Time: 19:55
+  Date: 02.08.2021
+  Time: 02:44
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <html>
 <head>
-    <title>Profile</title>
-    <c:import url="links.jsp"></c:import>
+    <c:import url="../links.jsp"></c:import>
+    <title>Dashboard</title>
 </head>
-<body class="d-flex flex-column h-100">
-<c:import url="authorisedNavbar.jsp"></c:import><%--ADD SECURITY IMPORTATION--%>
-<main>
+<body>
+<c:import url="../authorisedNavbar.jsp"/>
+
     <div class="container-fluid">
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -176,20 +177,54 @@
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <div class="container mt-5">
                     <div class="mb-2 mb-md-0 row">
-                        <h1 class="h2 col-lg-12">Dashboard</h1>
-                        <c:forEach var="card" items="${cardList}">
-                            <div class="col-lg-2 card bg-success" style="height: 144px; width: 250px">
+                        <h1 class="h2 col-lg-12 mb-5">Dashboard</h1>
 
+                        <%--  <c:forEach var="card" items="${cardList}">--%>
+                        <div class="card col-lg-3 m-3" style="width: 20%;">
+                            <div class="card-body">
                                 <h4>${card.name}</h4>
                                 <h4 class="h6">${card.number}</h4>
-                                <h4 >${card.balance} <span> ${card.currency.name}</span> </h4>
+                                <h4>${card.balance} <span> ${card.currency.name}</span></h4>
                                 <h4>Card name</h4>
-                                <h4 class="h6">XXXX XXXX XXXX XXXX</h4>
-                                <h4 >1056.59 <span> $</span> </h4>
+                                <h4>1056.59 <span> $</span></h4>
                             </div>
-                        </c:forEach>
+                            <div class="card-footer bg-transparent">
+                                <h4 class="h6">XXXX XXXX XXXX XXXX</h4>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3 m-3" style="width: 20%;">
+                            <div class="card-body">
+                                <h4>${card.name}</h4>
+                                <h4 class="h6">${card.number}</h4>
+                                <h4>${card.balance} <span> ${card.currency.name}</span></h4>
+                                <h4>Card name</h4>
+                                <h4>1056.59 <span> $</span></h4>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <h4 class="h6">XXXX XXXX XXXX XXXX</h4>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3 m-3" style="width: 20%;">
+                            <div class="card-body">
+                                <h4>${card.name}</h4>
+                                <h4 class="h6">${card.number}</h4>
+                                <h4>${card.balance} <span> ${card.currency.name}</span></h4>
+                                <h4>Card name</h4>
+                                <h4>1056.59 <span> $</span></h4>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <h4 class="h6">XXXX XXXX XXXX XXXX</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-1 m-3">
+                          <a class="btn btn-success" style="height: 100%">+</a>
+                        </div>
+
+
+                        <%--</c:forEach>--%>
                     </div>
                     <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart"
                             style="display: block; height: 271px; width: 644px;" width="966" height="406"></canvas>
@@ -197,7 +232,6 @@
             </main>
         </div>
     </div>
-</main>
+<c:import url="../footer.jsp"></c:import>
 </body>
-<c:import url="footer.jsp"></c:import>
 </html>

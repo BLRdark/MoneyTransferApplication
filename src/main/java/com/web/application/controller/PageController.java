@@ -1,7 +1,6 @@
 package com.web.application.controller;
 
 import com.web.application.config.hibernate.DAO.UserQuery;
-import com.web.application.model.pojo.Card;
 import com.web.application.model.pojo.userDetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,11 +19,6 @@ public class PageController {
         return "register";
     }
 
-    @GetMapping("/dashboard")
-    public String dashboard(){
-        return "dashboard";
-    }
-
     @GetMapping("/test")
     public String test(Model model){
 
@@ -36,12 +30,5 @@ public class PageController {
         System.out.println(model.getAttribute("user"));
         return "test";
     }
-
-    @GetMapping("/profile")
-    public String profile(Model model){
-        model.addAttribute("cardList", new Card());
-        return "profile";
-    }
-
 
 }
